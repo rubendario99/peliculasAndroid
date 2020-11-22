@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerViewLista"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewPortadaLista"
+        android:layout_width="159dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alien" />
+
+    <TextView
+        android:id="@+id/textViewTituloLista"
+        android:layout_width="202dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="26dp"
+        android:text="Dune"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDirectorLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDirectorLista"
+        android:layout_width="142dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:text="Director: Lynch"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFechaLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista" />
+
+    <TextView
+        android:id="@+id/textViewDuracionLista"
+        android:layout_width="141dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="77dp"
+        android:text="Duración: 180 min"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSalaLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista" />
+
+    <TextView
+        android:id="@+id/textViewSalaLista"
+        android:layout_width="129dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="17dp"
+        android:text="Sala: Gran Vía"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewClasiLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista" />
+
+    <TextView
+        android:id="@+id/textViewFechaLista"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:text="Fecha: 3-01-1983"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDuracionLista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista" />
+
+    <ImageView
+        android:id="@+id/imageViewClasiLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/g" />
+
+    <ImageView
+        android:id="@+id/imageViewFavoritaListado"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="6dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewClasiLista"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPortadaLista"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSalaLista"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_favorite_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

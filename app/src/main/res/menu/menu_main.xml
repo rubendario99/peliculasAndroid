@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/lista"
+        android:checkable="false"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:onClick="menuLista"
+        android:title="Listado"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="Favoritas"
+        android:id="@+id/favoritas"
+        android:onClick="menuFavoritas"
+        app:showAsAction="always"></item>
+
+    <item
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Añadir"
+        android:id="@+id/añadir"
+        android:onClick="menuAñadir"
+        app:showAsAction="always"></item>
+</menu>
